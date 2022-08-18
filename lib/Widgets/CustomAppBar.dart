@@ -1,24 +1,26 @@
- // ignore_for_file: file_names
+// ignore_for_file: file_names
 
- import 'package:ecom/Widgets/const.dart';
+import 'package:ecom/Widgets/const.dart';
 import 'package:flutter/material.dart';
 
-class Customappbar extends StatelessWidget with PreferredSizeWidget{
-  const Customappbar({
-    Key? key,
-  }) : super(key: key);
-
+// ignore: must_be_immutable
+class Customappbar extends StatelessWidget with PreferredSizeWidget {
+  Customappbar({
+    required this.title,
+  });
+  String title;
   @override
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
       backgroundColor: Colors.transparent,
       title: Container(
-        padding:const  EdgeInsets.symmetric(horizontal: 20),
-        child: const Text(
-          "Delta Commerce",
-          style: TextStyle(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Text(
+          title,
+          style: const TextStyle(
               color: primarycolor,
+              fontSize: 25,
               fontFamily: "Avenir",
               fontWeight: FontWeight.bold),
         ),
@@ -30,12 +32,14 @@ class Customappbar extends StatelessWidget with PreferredSizeWidget{
             Icons.favorite,
             color: primarycolor,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/wishlist');
+          },
         )
       ],
     );
   }
-  
+
   @override
   Size get preferredSize => const Size.fromHeight(50.0);
 }
