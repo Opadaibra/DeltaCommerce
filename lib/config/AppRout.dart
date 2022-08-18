@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:ecom/Screens/Cart.dart';
 import 'package:ecom/Screens/Catalog.dart';
 import 'package:ecom/Screens/Product.dart';
@@ -9,7 +11,6 @@ import '../Screens/HomeScreen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
-    print("this route ${settings.name}");
 
     switch (settings.name) {
       case '/':

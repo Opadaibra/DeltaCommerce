@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class Customappbar extends StatelessWidget with PreferredSizeWidget {
-  Customappbar({
+  Customappbar({Key? key, 
     required this.title,
-  });
+  }) : super(key: key);
   String title;
   @override
   Widget build(BuildContext context) {
