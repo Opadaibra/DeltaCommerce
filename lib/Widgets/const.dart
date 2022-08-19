@@ -8,8 +8,8 @@ const Color shadowcolor = Colors.black12;
 //DefaultPadding
 EdgeInsets defpadding =
     const EdgeInsets.symmetric(horizontal: 20, vertical: 10);
-EdgeInsets defHpadding = const EdgeInsets.symmetric(horizontal: 10);
-EdgeInsets defVpadding = const EdgeInsets.symmetric(vertical: 10);
+EdgeInsets defHpadding = const EdgeInsets.symmetric(horizontal: 20);
+EdgeInsets defVpadding = const EdgeInsets.symmetric(vertical: 20);
 
 //space
 SizedBox verticalspace = const SizedBox(width: 10);

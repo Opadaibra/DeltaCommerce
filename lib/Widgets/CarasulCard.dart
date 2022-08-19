@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:ecom/Widgets/const.dart';
 import 'package:ecom/modules/category_model.dart';
 
 import 'package:flutter/material.dart';
@@ -35,8 +36,7 @@ class HeroCrauslCards extends StatelessWidget {
                       end: Alignment.topCenter,
                     ),
                   ),
-                  padding: const EdgeInsets.symmetric(
-                      vertical: 10.0, horizontal: 20.0),
+                  padding:defpadding,
                   child: Text(
                     category.name,
                     style: Theme.of(context)
