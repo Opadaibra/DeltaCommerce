@@ -9,16 +9,16 @@ class Category extends Equatable {
 
   static const List<Category> categorys = [
     Category(
-        name: "Wedding",
+        name: "Techniques",
         imagUrl:
-            'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80'),
+            'https://thumbs.dreamstime.com/b/techniques-word-cloud-techniques-word-cloud-business-concept-202532794.jpg'),
     Category(
-        name: "Laptop",
+        name: "Gamming",
         imagUrl:
-            'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80'),
+            'https://cdn.vox-cdn.com/thumbor/y_8QDDrRhFD6ntasHlETY98dHfQ=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/16385004/acastro_190618_1777_cloud_gaming_0003.jpg'),
     Category(
-        name: "See",
+        name: "MakeUp",
         imagUrl:
-            'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80'),
+            'https://www.verywellhealth.com/thmb/GE_rmkh88ZWn1lMtacYttTNkAjg=/2000x2000/smart/filters:no_upscale()/gluten-free-makeup-brands-562443-primary-recirc-b8cf5ac52391436ba4114a6355aac323.jpg'),
   ];
 }

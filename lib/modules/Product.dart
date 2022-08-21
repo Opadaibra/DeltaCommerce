@@ -39,7 +39,7 @@ class Product extends Equatable {
         name: "Blue Channel",
         category: "MakeUp",
         imageUrl:
-            "https://m.media-amazon.com/images/I/31euGcJocBL._AC_SY350_.jpg",
+            "https://m.media-amazon.com/images/I/71iIlMVc8RL._SL1500_.jpg",
         price: 5.99,
         isrecommended: true,
         ispopular: true),
@@ -49,13 +49,28 @@ class Product extends Equatable {
         imageUrl: "https://www.oberlo.com/media/1603969791-image-1.jpg",
         price: 1000,
         isrecommended: false,
-        ispopular: true),
+        ispopular: false),
     Product(
         name: "NOOTBOOK",
         category: "Techniques",
         imageUrl:
             "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej-1280x720.png",
         price: 465,
+        isrecommended: true,
+        ispopular: false),
+    Product(
+        name: "MakeUp Clearance",
+        category: "MakeUp",
+        imageUrl:
+            "https://www.bureauveritas.co.uk/sites/g/files/zypfnx216/files/2019-05/Cosmetics%20Testing.jpg",
+        price: 40,
+        isrecommended: false,
+        ispopular: true),
+    Product(
+        name: "Bridal",
+        category: "MakeUp",
+        imageUrl: "https://www.pinkvilla.com/files/bridal_makeup_kit_4.jpg",
+        price: 20,
         isrecommended: true,
         ispopular: false),
   ];

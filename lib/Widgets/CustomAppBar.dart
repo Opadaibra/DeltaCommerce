@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class Customappbar extends StatelessWidget with PreferredSizeWidget {
-  Customappbar({Key? key, 
+  Customappbar({
+    Key? key,
     required this.title,
   }) : super(key: key);
   String title;
@@ -13,6 +14,15 @@ class Customappbar extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
+      leading: IconButton(
+        icon: const Icon(
+          Icons.arrow_back_ios,
+          color: primarycolor,
+        ),
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
       backgroundColor: Colors.transparent,
       title: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20),

@@ -5,24 +5,27 @@ import 'package:ecom/Screens/Catalog.dart';
 import 'package:ecom/Screens/Product.dart';
 import 'package:ecom/Screens/WishList.dart';
 import 'package:ecom/Widgets/const.dart';
+import 'package:ecom/modules/Product.dart';
+import 'package:ecom/modules/category_model.dart';
 import 'package:flutter/material.dart';
 
 import '../Screens/HomeScreen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
-
     switch (settings.name) {
       case '/':
         return HomeScreen.route();
       // ignore: no_duplicate_case_values
       case HomeScreen.routeName:
         return HomeScreen.route();
-     case Cart.routeName:
-        return Cart.route(); 
-     case Catlog.routeName:
-        return Catlog.route();  case Product.routeName:
-        return Product.route();  case Wishlist.routeName:
+      case Cart.routeName:
+        return Cart.route();
+      case Catlog.routeName:
+        return Catlog.route(category: settings.arguments as Category);
+      case MyProduct.routeName:
+        return MyProduct.route(product: settings.arguments as Product);
+      case Wishlist.routeName:
         return Wishlist.route();
       default:
         return _errorRoute();
